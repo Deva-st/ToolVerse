@@ -1,0 +1,129 @@
+:root {
+  --bg: radial-gradient(circle at top left, #0b2341, #5b2fa6);
+  --glass: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.15);
+  --text: #eaf6ff;
+  --accent: #5cc1ff;
+  --radius: 16px;
+  --blur: 16px;
+  --shadow: 0 8px 35px rgba(0, 0, 0, 0.55);
+  --font: "Poppins", "Segoe UI", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background: var(--bg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 20px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow);
+  padding: 14px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  text-align: center;
+}
+header h2 {
+  font-size: 1.4rem;
+  justify-self: center;
+}
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+  justify-self: end;
+}
+.back {
+  text-decoration: none;
+  color: var(--text);
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 10px;
+  justify-self: start;
+}
+.back:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* CONTAINER */
+.container {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 700px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow);
+  padding: 25px;
+  text-align: center;
+}
+
+/* FORM ELEMENTS */
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+  width: 90%;
+  margin-bottom: 12px;
+  outline: none;
+  text-align: center;
+}
+select {
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
+}
+button {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--accent);
+}
+
+/* RESULT */
+.result {
+  margin-top: 15px;
+  color: var(--accent);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container { padding: 18px; }
+  header h2 { font-size: 1.1rem; }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToolVerse | Home</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#5b2fa6">
+
+  <!-- Original CSS -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <img src="icon-192.png" alt="ToolVerse Logo" class="logo" />
+    <h1>ToolVerse</h1>
+    <h4></h4>
+  </header>
+
+  <main class="home-container">
+    <div class="modules-grid">
+      <a href="calculator.html" class="module">🧮<span>Calculator</span></a>
+      <a href="converter.html" class="module">🔄<span>Converter</span></a>
+      <a href="developer.html" class="module">💻<span>Developer Tools</span></a>
+
+      <a href="randomizer.html" class="module bottom">🎲<span>Randomizer</span></a>
+      <a href="text.html" class="module bottom">✏️<span>Text Tools</span></a>
+       <a href="health.html" class="module bottom">⚕️<span>Health Tools</span></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ToolVerse | All rights reserved</p>
+  </footer>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js");
+      });
+    }
+  </script>
+</body>
+</html>

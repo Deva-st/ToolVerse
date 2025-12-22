@@ -1,0 +1,145 @@
+/* Same theme as other modules */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+  background: radial-gradient(circle at top left, #0b2341, #5b2fa6);
+  background-attachment: fixed;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+header img {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.back {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Tool Area */
+.tool-area {
+  margin-top: 10px;
+}
+
+/* Inputs & Textarea */
+.tool-area textarea,
+.tool-area input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--accent);
+}
+
+button:active {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Result area */
+.result {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* QR Fix */
+#qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#qrcode img,
+#qrResult canvas {
+  display: block;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#qrResult canvas {
+  margin-top: 15px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px;
+}
+.qr-preview {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}

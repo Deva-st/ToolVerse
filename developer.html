@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Tools | ToolVerse</title>
+  <link rel="stylesheet" href="../modules-theme.css" />
+  <link rel="stylesheet" href="developer.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Back</a>
+    <h2>Developer Tools</h2>
+    <img src="icon-192.png" alt="logo" />
+  </header>
+
+  <div class="container">
+    <label for="devType">Choose Tool</label>
+    <select id="devType">
+      <option value="hash">Hash Generator (MD5 / SHA256)</option>
+      <option value="qr">QR Code Generator</option>
+      <option value="morse">Morse Code Generator</option>
+    </select>
+
+    <div id="devArea" class="tool-area"></div>
+  </div>
+
+  <script src="qrcode.min.js"></script>
+  <script src="developer.js"></script>
+</body>
+</html>

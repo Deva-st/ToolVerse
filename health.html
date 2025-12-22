@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ToolVerse | Health Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="modules-theme.css" />
+  <link rel="stylesheet" href="health.css" />
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="back">← Back</a>
+  <h2>Health Tools</h2>
+  <img src="icon-192.png" alt="logo" />
+</header>
+
+<div class="container">
+
+  <!-- TOOL DROPDOWN (BMI DEFAULT) -->
+  <select id="toolSelect" onchange="switchTool()">
+    <option value="bmi" selected>BMI Calculator</option>
+    <option value="bmr">BMR Calculator</option>
+    <option value="ideal">Ideal Weight</option>
+  </select>
+
+  <!-- BMI -->
+  <div class="tool" id="bmi">
+    <input type="number" id="bmiWeight" placeholder="Weight (kg)" />
+    <input type="number" id="bmiHeight" placeholder="Height (cm)" />
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div class="result" id="bmiResult"></div>
+  </div>
+
+  <!-- BMR -->
+  <div class="tool" id="bmr">
+    <input type="number" id="bmrWeight" placeholder="Weight (kg)" />
+    <input type="number" id="bmrHeight" placeholder="Height (cm)" />
+    <input type="number" id="bmrAge" placeholder="Age (max 150)" max="150" />
+
+    <select id="bmrGender">
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+
+    <button onclick="calculateBMR()">Calculate BMR</button>
+    <div class="result" id="bmrResult"></div>
+  </div>
+
+  <!-- IDEAL WEIGHT -->
+  <div class="tool" id="ideal">
+    <input type="number" id="idealHeight" placeholder="Height (cm)" />
+
+    <select id="idealGender">
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <button onclick="calculateIdealWeight()">Calculate Ideal Weight</button>
+    <div class="result" id="idealResult"></div>
+  </div>
+
+</div>
+
+<script src="health.js"></script>
+</body>
+</html>

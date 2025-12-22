@@ -1,0 +1,119 @@
+@import url("modules-theme.css");
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* =========================
+   SELECT
+========================= */
+select {
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+}
+
+select option {
+  background: #fff;
+  color: #000;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* =========================
+   RESULT TEXT
+========================= */
+.result {
+  margin-top: 18px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* =========================
+   RANDOMIZER BOX
+========================= */
+.rand-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =========================
+   DICE (REAL FACE)
+========================= */
+.dice {
+  font-size: 3.8rem;
+  margin: 12px 0;
+  display: inline-block;
+}
+
+.roll {
+  animation: diceRoll 0.6s ease-in-out;
+}
+
+@keyframes diceRoll {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(90deg) scale(1.2); }
+  50%  { transform: rotate(180deg) scale(1.3); }
+  75%  { transform: rotate(270deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* =========================
+   COIN (TEXT ON COIN)
+========================= */
+.coin {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 12px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+
+  background: radial-gradient(circle at top, #ffd27d, #d4a017);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
+  transform-style: preserve-3d;
+}
+
+.flip {
+  animation: coinFlip 0.7s ease-in-out;
+}
+
+@keyframes coinFlip {
+  0%   { transform: rotateY(0deg); }
+  50%  { transform: rotateY(180deg) scale(1.2); }
+  100% { transform: rotateY(360deg); }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Calculator | ToolVerse</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+
+  <link rel="stylesheet" href="modules-theme.css">
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="back">← Back</a>
+  <h2>Calculator</h2>
+  <img src="icon-192.png" alt="ToolVerse Logo">
+</header>
+
+<div class="container">
+  <label class="label">Choose Calculator Type:</label>
+
+  <select id="calcType">
+    <option value="basic">Basic Calculator</option>
+    <option value="scientific">Scientific Calculator</option>
+    <option value="geometry">Geometry Calculator</option>
+  </select>
+
+  <div id="calcArea"></div>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>

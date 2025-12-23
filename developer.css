@@ -1,4 +1,4 @@
-/* Same theme as other modules */
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   background-attachment: fixed;
 }
 
-/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,7 @@ header img {
   font-weight: 500;
 }
 
-/* Container */
+
 .container {
   width: 90%;
   max-width: 700px;
@@ -49,14 +49,14 @@ header img {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Labels */
+
 label {
   display: block;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-/* Select */
+
 select {
   width: 100%;
   padding: 10px;
@@ -67,12 +67,12 @@ select {
   margin-bottom: 20px;
 }
 
-/* Tool Area */
+
 .tool-area {
   margin-top: 10px;
 }
 
-/* Inputs & Textarea */
+
 .tool-area textarea,
 .tool-area input {
   width: 100%;
@@ -84,7 +84,7 @@ select {
   font-size: 1rem;
 }
 
-/* Buttons */
+
 button {
   padding: 12px 18px;
   font-size: 1.05rem;
@@ -107,7 +107,7 @@ button:active {
   color: #000;
 }
 
-/* Result area */
+
 .result {
   margin-top: 15px;
   display: flex;
@@ -116,7 +116,7 @@ button:active {
   gap: 14px;
 }
 
-/* QR Fix */
+
 #qrcode {
   display: flex;
   justify-content: center;

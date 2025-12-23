@@ -1,8 +1,8 @@
-// ToolVerse Main Script
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Welcome to ToolVerse 🚀");
 
-  // Simple fade-in animation for cards
+
   const cards = document.querySelectorAll(".card");
   cards.forEach((card, i) => {
     card.style.opacity = 0;
@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200 * i);
   });
 });
+

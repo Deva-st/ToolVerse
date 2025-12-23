@@ -1,6 +1,6 @@
 @import url("modules-theme.css");
 
-/* BACKGROUND */
+
 body {
   background: radial-gradient(circle at top left, #0b2341, #5b2fa6);
   background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-/* HEADER */
+
 header {
   width: 100%;
   text-align: center;
@@ -39,7 +39,7 @@ header h1 {
   text-shadow: 0 0 10px #5cc1ff;
 }
 
-/* MAIN CONTAINER */
+
 .home-container {
   flex-grow: 1;
   width: 100%;
@@ -49,7 +49,7 @@ header h1 {
   padding: 50px 20px;
 }
 
-/* MODULES GRID (RESPONSIVE & SAFE) */
+
 .modules-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -59,7 +59,7 @@ header h1 {
   justify-items: center;
 }
 
-/* MODULE BOXES */
+
 .module {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid var(--border);
@@ -83,14 +83,14 @@ header h1 {
   color: var(--accent);
 }
 
-/* HOVER EFFECT */
+
 .module:hover {
   background: rgba(255, 255, 255, 0.2);
   color: var(--accent);
   transform: translateY(-5px) scale(1.03);
 }
 
-/* FOOTER */
+
 footer {
   margin-top: auto;
   padding: 20px 0;
@@ -103,7 +103,7 @@ footer {
   backdrop-filter: blur(8px);
 }
 
-/* RESPONSIVE TWEAKS */
+
 @media (max-width: 600px) {
   .module {
     width: 180px;
@@ -115,3 +115,4 @@ footer {
     font-size: 1.6rem;
   }
 }
+

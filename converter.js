@@ -1,7 +1,6 @@
 const converterType = document.getElementById("converterType");
 const converterArea = document.getElementById("converterArea");
 
-/* LOAD DEFAULT */
 document.addEventListener("DOMContentLoaded", () => {
   loadUnitConverter();
 });
@@ -146,3 +145,4 @@ function convertBase() {
     res.innerHTML = "⚠️ Invalid number";
   }
 }
+

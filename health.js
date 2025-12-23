@@ -9,10 +9,9 @@ function switchTool() {
   active.style.alignItems = "center";
 }
 
-/* Load BMI by default */
+
 window.onload = switchTool;
 
-/* ENTER = CALCULATE */
 document.addEventListener("keydown", e => {
   if (e.key === "Enter") {
     document
@@ -21,7 +20,7 @@ document.addEventListener("keydown", e => {
   }
 });
 
-/* BMI + CATEGORY */
+/* BMI  */
 function calculateBMI() {
   const w = +bmiWeight.value;
   const h = +bmiHeight.value / 100;
@@ -78,3 +77,4 @@ function calculateIdealWeight() {
 
   idealResult.textContent = `Ideal Weight: ${ideal.toFixed(1)} kg`;
 }
+

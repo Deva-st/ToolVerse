@@ -1,4 +1,4 @@
-/* ToolVerse Developer Tools — with QR Tabbed Generator */
+
 
 const devType = document.getElementById("devType");
 const devArea = document.getElementById("devArea");
@@ -6,7 +6,6 @@ const devArea = document.getElementById("devArea");
 devType.addEventListener("change", renderTool);
 renderTool();
 
-/* ------------------ TOOL RENDERING ------------------ */
 function renderTool() {
   const type = devType.value;
   if (type === "hash") loadHashTool();
@@ -115,7 +114,7 @@ function md5(s) {
   return (B(Y) + B(X) + B(W) + B(V)).toLowerCase();
 }
 
-/* ------------------ QR GENERATOR (WITH TABS) ------------------ */
+/* ------------------ QR GENERATOR  ------------------ */
 function loadQRTool() {
   devArea.innerHTML = `
     <h3>QR Code Generator (Offline)</h3>

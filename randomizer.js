@@ -4,9 +4,7 @@ const randArea = document.getElementById("randArea");
 randType.addEventListener("change", renderRandomizer);
 renderRandomizer();
 
-/* =========================
-   ROUTER
-========================= */
+
 function renderRandomizer() {
   const type = randType.value;
   if (type === "number") loadNumber();
@@ -15,9 +13,7 @@ function renderRandomizer() {
   else if (type === "password") loadPassword();
 }
 
-/* =========================
-   RANDOM NUMBER
-========================= */
+/* =========================  RANDOM NUMBER  ========================= */
 function loadNumber() {
   randArea.innerHTML = `
     <div class="rand-box">
@@ -42,9 +38,7 @@ function generateNumber() {
     Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/* =========================
-   DICE (FACE SHOWN)
-========================= */
+/* =========================   DICE  ========================= */
 function loadDice() {
   randArea.innerHTML = `
     <div class="rand-box">
@@ -59,7 +53,7 @@ function rollDice() {
   const faces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
 
   dice.classList.remove("roll");
-  void dice.offsetWidth; // restart animation
+  void dice.offsetWidth; 
   dice.classList.add("roll");
 
   const value = Math.floor(Math.random() * 6);
@@ -69,9 +63,7 @@ function rollDice() {
   }, 600);
 }
 
-/* =========================
-   COIN (HEADS / TAILS ON COIN)
-========================= */
+/* =========================   COIN   ========================= */
 function loadCoin() {
   randArea.innerHTML = `
     <div class="rand-box">
@@ -85,7 +77,7 @@ function flipCoin() {
   const coin = document.getElementById("coin");
 
   coin.classList.remove("flip");
-  void coin.offsetWidth; // restart animation
+  void coin.offsetWidth; 
   coin.classList.add("flip");
 
   const result = Math.random() < 0.5 ? "HEADS" : "TAILS";
@@ -95,9 +87,7 @@ function flipCoin() {
   }, 700);
 }
 
-/* =========================
-   PASSWORD
-========================= */
+/* =========================   PASSWORD   ========================= */
 function loadPassword() {
   randArea.innerHTML = `
     <div class="rand-box">

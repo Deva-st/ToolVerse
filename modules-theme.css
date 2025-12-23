@@ -27,7 +27,7 @@ body {
   color: var(--text);
 }
 
-/* HEADER */
+
 header {
   width: 90%;
   max-width: 1000px;
@@ -68,7 +68,7 @@ header img {
   color: #000;
 }
 
-/* CONTAINER */
+
 .container {
   margin-top: 40px;
   width: 90%;
@@ -82,7 +82,7 @@ header img {
   text-align: center;
 }
 
-/* FORM ELEMENTS */
+
 input, textarea, select {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid var(--border);
@@ -114,7 +114,7 @@ button:hover {
   color: var(--accent);
 }
 
-/* RESULT */
+
 .result {
   margin-top: 15px;
   color: var(--accent);
@@ -122,8 +122,9 @@ button:hover {
   text-align: center;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 600px) {
   .container { padding: 18px; }
   header h2 { font-size: 1.1rem; }
 }
+

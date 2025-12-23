@@ -1,8 +1,6 @@
 @import url("modules-theme.css");
 
-/* =========================
-   CONTAINER
-========================= */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -10,9 +8,7 @@
   gap: 18px;
 }
 
-/* =========================
-   SELECT
-========================= */
+
 select {
   background: rgba(255, 255, 255, 0.85);
   color: #000;
@@ -27,9 +23,7 @@ select option {
   color: #000;
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 button {
   background: var(--glass);
   border: 1px solid var(--border);
@@ -45,18 +39,14 @@ button:hover {
   color: #000;
 }
 
-/* =========================
-   RESULT TEXT
-========================= */
+
 .result {
   margin-top: 18px;
   color: var(--accent);
   font-weight: 600;
 }
 
-/* =========================
-   RANDOMIZER BOX
-========================= */
+
 .rand-box {
   display: flex;
   flex-direction: column;
@@ -64,9 +54,7 @@ button:hover {
   gap: 12px;
 }
 
-/* =========================
-   DICE (REAL FACE)
-========================= */
+
 .dice {
   font-size: 3.8rem;
   margin: 12px 0;
@@ -85,9 +73,7 @@ button:hover {
   100% { transform: rotate(360deg) scale(1); }
 }
 
-/* =========================
-   COIN (TEXT ON COIN)
-========================= */
+
 .coin {
   width: 90px;
   height: 90px;

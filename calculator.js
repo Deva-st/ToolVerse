@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     else geometry();
   }
 
-  /* ================= BASIC ================= */
+  /* ================= BASIC CALCULATOR ================= */
   function basic() {
     calcArea.innerHTML = `
       <div class="calculator">
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initButtons();
   }
 
-  /* ================= SCIENTIFIC ================= */
+  /* ================= SCIENTIFIC CALCULATOR ================= */
   function scientific() {
     calcArea.innerHTML = `
       <div class="calculator">
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initButtons();
   }
 
-  /* ================= GEOMETRY ================= */
+  /* ================= GEOMETRY CALCULATOR ================= */
   function geometry() {
     calcArea.innerHTML = `
       <label>Shape</label>
@@ -129,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
     geoResult.innerText = formatResult(r);
   }
 
-  /* ================= CORE ================= */
   function initButtons() {
     display = document.getElementById("display");
     document.querySelectorAll("button").forEach(btn => {
@@ -158,7 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let result = math.evaluate(exp);
 
-      // FORCE ROUND TRIG
       if (/sin|cos|tan/.test(display.value))
         result = Number(result.toFixed(2));
 
@@ -167,7 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // SMART CLEAR LOGIC
     if (justEvaluated) {
       if (isOperator(v)) {
         display.value += v;
@@ -185,7 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return Number.isInteger(val) ? val : Number(val.toFixed(2));
   }
 
-  /* ================= KEYBOARD ================= */
   document.addEventListener("keydown", e => {
     if (!display) return;
 
@@ -198,4 +194,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-/* this is final*/
